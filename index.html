@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Jay Robinson · jayrobinson.org</title>
+
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+<style>
+
+    body {
+        background: #fff;
+        color: #45454a;
+        font: normal 16px/1.5625 ProximaNovaRegular, HelveticaNeue, Helvetica, Arial, sans-serif;
+        margin: 0 auto 7.25em;
+        width: 960px;
+    }
+
+    #container {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    a {
+        border-bottom: 1px solid rgba(41,44,56,0.2);
+        color: #292c38;
+        padding-bottom: 2px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom-color: rgba(63,107,151,0.5);
+        color: #3f6b97;
+    }
+
+    h1 a {
+        border: 0;
+        color: #45454a;
+    }
+
+    hr {
+        background: #fff;
+        border: 0;
+        height: 1px;
+    }
+
+    article {
+        margin: 6.25em auto 4em;
+        -webkit-transition: all 0.1s ease-in-out;
+    }
+
+    .content {
+        font: normal 16px/1.5625 Georgia, serif;
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    .content hr {
+        margin: 3em auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #33343a;
+        font-family: ProximaNovaRegular, HelveticaNeue, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: /* 29px */ 42px;
+        margin: 1.25em 0 0.68em;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 0.9em;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+/*
+    h4,
+    h5,
+    h6 {
+        color: #333;
+        font-family: Georgia, serif;
+        font-weight: 500;
+        text-align: center;
+    }
+*/
+
+    h4 {
+        font-size: 19px;
+    }
+
+    h5,
+    h6 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-style: italic;
+    }
+
+    header h1 {
+        color: #707277;
+        font-size: 16px;
+        margin: 1em 0;
+        -webkit-transition: all 0.1s ease-in-out;
+    }
+
+    time {
+        color: #8d8e99;
+        font-size: 16px;
+    }
+
+    figure {
+        border: double #f0f2f9;
+        border-width: 3px 0;
+        margin: 3em 0;
+        padding: 3em 0;
+    }
+
+    figure + figure {
+        border-top: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    figure:last-child {
+        border-bottom: 0;
+    }
+
+    figure img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        color: #707277;
+        display: block;
+        font-style: italic;
+        margin: 0.5em 0 0;
+        text-align: center;
+    }
+
+    dt {
+        color: #33343a;
+        font-family: ProximaNovaRegular, HelveticaNeue, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        padding-top: 0.375em;
+    }
+
+    code, mbd, tt {
+        font-family: Menlo, Monaco, Courier, monospace;
+    }
+
+    footer h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    footer {
+        margin: 0 auto;
+        width: 640px;
+    }
+
+    footer hr {
+        background: #dcdcdc;
+        border-radius: 2px;
+        height: 4px;
+        margin: 4em auto 4em;
+        width: 4px;
+    }
+
+    @media all and (max-width: 959px) {
+        body,
+        header,
+        .content,
+        footer {
+            width: 100%;
+        }
+        #container {
+            max-width: 640px;
+            width: 86%;
+        }
+        header h1 {
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        article {
+            margin: 1.25em auto 2.5em;
+        }
+        h1 {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        figure {
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+        figcaption {
+            font-size: 0.8em;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    @media all and (max-width: 321px) {
+        figure {
+            margin-left: -7.5%;
+            width: 115.25%;
+        }
+        img {
+            max-width: 100%;
+        }
+        figcaption {
+            padding: 0 1em;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        <h1>You’re reading an article by <a id="whois" href="http://jayrobinson.org">Jay Robinson</a>, a designer living in California.</h1>
+    </header>
+
+    <section>
+
+        <article>
+            <h1><a href="#">Some Notes On iTunes LP</a></h1>
+            <h2><time>September 11, 2009</time></h2>
+            <div class="content">
+
+<script type="text/javascript" charset="utf-8">
+function addHover(e) {
+ 	x = e.src;
+  	x = x.substring(0, x.indexOf('.png'));
+	e.src = x + '-hover' + '.png';
+}
+function removeHover(e) {
+ 	x = e.src;
+  	x = x.substring(0, x.indexOf('-hover'));
+	e.src = x + '.png';
+}
+</script>
+
+<p>It’s clear that <a href="http://jayrobinson.org/2009/09/10/itunes-9-and-the-future-of-webkit/" rel="me">I’m pretty excited about iTunes LP</a>. The “deluxe album” format from the iTunes Store is an attempt to revitalize music sales by providing an immersive digital experience complete with detailed art reminiscent of when people used to buy records. Feature-wise, an iTunes LP is a <abbr>DRM</abbr>-free album in high-quality 256<abbr title="kilobits per second">kbps</abbr> <abbr title="Advanced Audio Codec, Apple's music file of choice">AAC</abbr> format, along with digital extras (visualizer(s), photos, videos and interviews) wrapped in a custom WebKit-powered site.</p>
+<p>This morning I bought <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=329657977&amp;s=143441" rel="external">Jay-Z’s Blueprint 3</a>, as well as <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=327628407&amp;s=143441" rel="external">The Doors iTunes LP</a>, and am very impressed. Below I’ve included some screenshots as well as my thoughts on the experience.</p>
+<h2>General Use</h2>
+<p>When you purchase an iTunes LP, the music files begin downloading followed by an additional (hefty) file with an “.ITLP” extension. The .ITLP file itself can be over 500MB.</p>
+<p>Once you double-click an iTunes LP in iTunes, it takes over your entire window with a WebKit view. A photo fades in and an audio snippet representative of the album will start to play (about 30 seconds). A list of links leads you to the most obvious feature of the iTunes LP: photos, videos and lyric views.</p>
+<p>The LP frame seems to have a width and height of 1280×720. This is nice, but means I get ugly scrollbars all over my 13″ MacBook screen. I switched to a larger monitor for the screenshots, so here are some shots of the main features:</p>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-intro.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-intro-500x312.png" alt="iTunes LP Jay-Z Intro" width="500" class="alignnone size-medium wp-image-654"></a>
+<figcaption>Click to view full-size image.</figcaption>
+</figure>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-lyrics.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-lyrics-500x312.png" alt="iTunes LP Jay-Z Lyrics" width="500" class="alignnone size-medium wp-image-655"></a>
+<figcaption>Click to view full-size image.</figcaption>
+</figure>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-photos.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-photos-500x312.png" alt="iTunes LP Jay-Z Photos" width="500" class="alignnone size-medium wp-image-657" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-videos.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-videos-500x312.png" alt="itunes-lp-jay-z-videos" title="iTunes LP Jay-Z Videos" width="500" class="alignnone size-medium wp-image-660"></a>
+<figcaption>Click to view full-size image.</figcaption>
+</figure>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-videos-2.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-videos-2-500x312.png" alt="iTunes LP Jay-Z Videos" width="500" class="alignnone size-medium wp-image-659" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<h2>Visualizer</h2>
+<p>A wonderful thing happens when you click “Play All” on an iTunes LP — you are treated to a feature I dub iTunes LP visualizer. The visualizer is the “surprise and delight” feature of iTunes LP; a creative display of digital art.</p>
+<p>Jay-Z’s iTunes LP album comes with three different visualizers that cycle through at measured intervals. The initial visualizer shows audio waveforms. I mistakenly thought the waveforms were dynamically generated by the music until I watched for a while. Here are the screenshots of the three visualizers, respectively called “Waves”, “Songlist”, and “Puzzle”.</p>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-visualizer-waves.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-visualizer-waves-500x312.png" alt="iTunes LP Jay-Z Visualizer Waves" width="500" class="alignnone size-medium wp-image-666" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-visualizer-songlist.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-visualizer-songlist-500x312.png" alt="iTunes LP Jay-Z Visualizer Songlist" width="500" class="alignnone size-medium wp-image-664" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-visualizer-puzzle.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-visualizer-puzzle-500x312.png" alt="iTunes LP Jay-Z Visualizer Puzzle" width="500" class="alignnone size-medium wp-image-662" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<p>I’ve also included the only visualizer from The Doors album.</p>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-the-doors-visualizer.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-the-doors-visualizer-500x312.png" alt="itunes-lp-the-doors-visualizer" title="iTunes LP The Doors visualizer" width="500" class="alignnone size-medium wp-image-669" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<p>However, listening to music in the iTunes LP introduces some unfortunate user interface problems. Similar to Genius Mixes (also new in iTunes 9) there is no way to ask iTunes to send you to the currently playing song. This means that unless you leave the LP view you cannot rate the song or view any other metadata.</p>
+<p>This also causes a problem if you leave the iTunes LP interface to browse your library, then want to return to the LP. The only way is to select the iTunes LP from your file listing and double-click. This results in the iTunes LP site loading from the start and you losing your place through the album.</p>
+<p>Fortunately, the usability issue does not cause conflicts with the Play Count, which functions as expected.</p>
+<h2>WebKit and iTunes LP Internal Structure</h2>
+<p>I was very curious about iTunes LP and its use of WebKit so I decided to go rooting around in the Finder files. Just like iPhone app files (.IPA files in the Finder), I suspected that changing the .ITLP extension to .ZIP would reveal an archived folder. I was right; once you change the extension you can browse all the files inside. In fact, you can simply right-click and “inspect package contents”, however, it remains to be seen if Apple will take away this functionality in the future. Plus, adding the .ZIP extension allows you to browse the folder without a right-click. Here is what the files inside the The Blueprint 3 iTunes LP look like:</p>
+<figure>
+<img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-internal-file-structure1.png" alt="Internal Structure of an iTunes LP, Jay-Z The Blueprint 3" width="500" class="alignnone size-full wp-image-688">
+<figcaption>Internal Structure of an iTunes LP, Jay-Z The Blueprint 3</figcaption>
+</figure>
+<p>The iTunes LP experience is accomplished with HTML 4.01, CSS and JS. The interface feels very Flash-like, but there is no trace of it. The CSS animations are elaborate and smooth. Font files are referenced with an <code>@font-face</code> declaration in the CSS but there seems to be little to no use. Most text, even long passages of lyrics, is represented visually with a PNG file. I wonder if they originally intended to use font replacement for all text, but changed their mind.</p>
+<p>Here is an example the lead me to the above conclusion which I found in The Doors package. The original file was named “song13BackgroundClean.jpg”, but the one used is “song13Background.jpg”.</p>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-the-doors-font-face.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-the-doors-font-face-500x281.png" alt="iTunes LP The Doors font-face" width="500" class="alignnone size-medium wp-image-691" onmouseover="addHover(this)" onmouseout="removeHover(this)"></a><figcaption>Hover for alternate image. Click to view full-size image.</figcaption>
+</figure>
+<p>Perhaps unsurprisingly, most everything in an iTunes LP works in the latest version of Safari (4.0.3 at time of this writing) except when something tries to call iTunes (like a movie file). Here is what the index.html file looks like when you open it with Safari:</p>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-intro-browser.png"><img src="http://images.jayrobinson.org/2009/09/itunes-lp-jay-z-intro-browser-500x312.png" alt="iTunes LP Jay-Z The Blueprint 3 when viewed in Safari 4.0.3" width="500" class="alignnone size-medium wp-image-681"></a>
+<figcaption>Click to view full-size image.</figcaption>
+</figure>
+<p>The Doors package was littered with leftovers obviously intended for internal use, such as reference images for a completed page and style guides for layout. Here is one such image:</p>
+<figure>
+<a href="http://images.jayrobinson.org/2009/09/memGuide.jpg"><img src="http://images.jayrobinson.org/2009/09/memGuide-500x281.jpg" alt="memGuide" title="memGuide" width="500" class="alignnone size-medium wp-image-670"></a>
+<figcaption>Click to view full-size image.</figcaption>
+</figure>
+<h2>DRM</h2>
+<p>I didn’t find much in the way of DRM on the iTunes LP. Though your iTunes Store Account is recorded inside the .PLIST file, everything worked even when de-authorizing my computer in the middle of play, as well as removing the reference all together. I would  like to see if it would be possible to roll your own iTunes LP by modifying the included .PLIST to point to different sound files.</p>
+<h2>Conclusion</h2>
+<p>As a music fan, and as a web developer, I couldn’t be more pleased with the new iTunes LP offering. If your audience is significantly Apple-oriented (e.g. a site about Mac rumors or a popular iPhone app) this proves that you can provide an incredible experience using only JavaScript and some proposed CSS3 properties.</p>
+<p>The visualizer is a fun way to watch your music. And impressive; a friend of mine asked, “Is that Flash?” I may learn a thing or two about CSS animation by diving into the code and I encourage you to as well.</p>
+<p>Here’s hoping that square blue badge shows up in the iTunes Store a lot more in the future. iTunes LPs are a really fun way to enjoy your favorite albums.</p>
+<hr />
+<p>P.s. To make a Smart Playlist of all your iTunes LPs, configure so that “Kind” contains “iTunes LP”. I’ve included this because it took me a while to discover what criteria worked, and I thought I’d save you some time.</p>
+<figure>
+<img src="http://images.jayrobinson.org/2009/09/itunes-lp-smart-playlists-500-500x221.png" alt="iTunes LP Smart Playlists" width="500" class="alignnone size-medium wp-image-667">
+<figcaption>iTunes LP Smart Playlists</figcaption>
+</figure>
+
+            </div>
+        </article>
+
+        <article>
+            <h1><a href="#">Setting Up Your Mac For Local Development Using Coda, WordPress&nbsp;&amp;&nbsp;MAMP</a></h1>
+            <h2><time>August 10, 2009</time></h2>
+            <div class="content">
+
+                <p>WordPress is not just for blogs. WordPress is a highly sophisticated content management system that you can use to develop and manage your client’s professional websites. Best of all, it’s entirely <strong>free</strong>. To get started it  helps to experiment without the hassle of publishing files to the Internet. With a Mac, you already have the basics for an excellent local development environment.</p>
+                <p>In this tutorial, I will describe setting up a folder on your Mac that you can use to practice building websites with PHP and a MySQL database. Before we begin you will need</p>
+                <ol>
+                <li>a <a href="http://www.apple.com/getamac" title="a 13″ MacBook or MacBook Pro is an excellent choice">Mac</a></li>
+                <li>a <a href="http://www.panic.com/coda/" title="Coda is an excellent text editor and FTP program">text editor</a></li>
+                <li>a <a href="http://www.apple.com/safari/" title="Safari">web browser</a></li>
+                </ol>
+                <p>Let’s get started.</p>
+                <h2>Step 1. Download WordPress</h2>
+                <p><a href="http://www.wordpress.org/">Download WordPress</a> from WordPress.org. Unzip it to find a folder called “wordpress”. Rename it YOUR_PROJECT_NAME (Mine will be called “jay”). Drag it to the Sites folder in your Home directory. For easy access, I’ve added the Sites folder to my Finder window sidebar.</p>
+                <figure>
+                    <img src="http://images.jayrobinson.org/2009/08/local_dev.jpg" alt="Add the Sites folder to your Finder window sidebar" title="Add the Sites folder to your Finder window sidebar" width="500" class="alignnone size-full wp-image-519">
+                    <figcaption>Add the Sites folder to your Finder window sidebar</figcaption>
+                </figure>
+                <h2>Step 2. Download MAMP</h2>
+                <p><a href="http://www.mamp.info/">Download the free MAMP software</a> from Mamp.info and install. MAMP stands for Mac, Apache, MySQL and PHP. This app helps manage our MySQL databases in a straight forward way.</p>
+                <p>Open the app and click “Preferences…”, then select the “Apache” tab to select our Document Root. We want to select the Sites folder located in your Home folder. The path should read <code>/Users/YOUR_MAC_OS_X_USER_SHORTNAME/Sites</code>. </p>
+                <figure>
+                    <img src="http://images.jayrobinson.org/2009/08/local_dev_mamp.jpg" alt="Set up MAMP to use ~/Sites as the Document Root" title="Set up MAMP to use ~/Sites as the Document Root" width="500" class="alignnone size-full wp-image-528">
+                    <figcaption>Set up MAMP to use ~/Sites as the Document Root</figcaption>
+                </figure>
+                <p>Once you activate MAMP and get the green lights, test if it is working by opening your browser and going to http://localhost:8888/ You should see the contents of your <abbr title="Shortcut for the users home folder in Unix systems">~</abbr>/Sites directory. Remember, we’re preparing a <em>local</em> development environment. “Localhost” means your computer, so no one else in the world will be able to see these files in their web browser.</p>
+                <p>Okay, MAMP is working, and the MySQL is just waiting for us to give it some database tables. Go to http://localhost:8888/MAMP (must be all uppercase) and click “phpMyAdmin”. Once there, “Create new database” with YOUR_PROJECT_NAME. My database name will be “jay” to match my project.</p>
+                <h2>Step 3. Configure Database</h2>
+                <p>Now we just have to match WordPress with the database. Access the YOUR_PROJECT_NAME folder in ~/Sites and rename the <code>wp-config-sample.php</code> to <code>wp-config.php</code>. Open the file to edit the content. <code>DB_NAME</code> means database name, so enter YOUR_PROJECT_NAME. The <code>DB_USER</code> and <code>DB_PASSWORD</code> are both “root”. Leave “localhost” as the server, as the server is our local computer.</p>
+                <figure>
+                    <img src="http://images.jayrobinson.org/2009/08/local_dev_wp_config.jpg" alt="Remember to change the name of this file from wp-config-sample.php to wp-config.php" title="Remember to change the name of this file from wp-config-sample.php to wp-config.php" width="500" class="alignnone size-full wp-image-529"></p>
+                    <figcaption>Remember to change the name of this file from wp-config-sample.php to wp-config.php</figcaption>
+                </figure>
+                <h2>Step 4. Install WordPress</h2>
+                <p>Visit http://localhost:8888/YOUR_PROJECT_NAME and you will see the famous five minute WordPress install. Set up the blog name and email, and you will be given a password. (I copy and paste this generated password to get into WordPress, then change it to something easy to remember right away. I use the same simple password for all my WordPress development sites, since they are not live on the Internet.)</p>
+                <figure>
+                    <img src="http://images.jayrobinson.org/2009/08/local_dev_wp.png" alt="The famous five minute WordPress installation process begins" title="The famous five minute WordPress installation process begins" width="500" class="alignnone size-full wp-image-532"></p>
+                    <figcaption>The famous five minute WordPress installation process begins</figcaption>
+                </figure>
+                <p>WordPress is now configured to work on your computer, but will only be accessible locally. The final step is to set up Coda to access the directory.</p>
+                <h2>Step 5. Add Site to Coda</h2>
+                <p>Go to Coda, enter Sites view (Command 1) and “Add Site…”</p>
+
+                <dl>
+                <dt>Nickname</dt>
+                <dd>YOUR_PROJECT_NAME</dd>
+                <dt>Root URL &amp; Local URL</dt>
+                <dd>When developing locally, this will simply be used to generate a thumbnail for you to see your project in Coda. These can be the same URL, e.g. http://localhost:8888/YOUR_PROJECT_NAME</dd>
+                <dt>Remote Root</dt>
+                <dd>None</dd>
+                <dt>Local Root</dt>
+                <dd>You may use the “Set…” file browser to find your project folder in the Sites folder, or copy and paste this template: /Users/YOUR_MAC_OS_X_USER_SHORTNAME/Sites/YOUR_PROJECT_NAME/</dd>
+                <dt>Connecting, Terminal and Source Control</dt>
+                <dd>Do not worry about these. You do not have to configure them for local development.</dd>
+                </dl>
+                <figure>
+                    <img src="http://images.jayrobinson.org/2009/08/local_dev_coda.jpg" alt="Setting up your new WordPress site in Coda" title="Setting up your new WordPress site in Coda" width="500" class="alignnone size-full wp-image-530"></p>
+                    <figcaption>Setting up your new WordPress site in Coda</figcaption>
+                </figure>
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <hr>
+        <h2>About Jay Robinson</h2>
+        <p>Jay Robinson has worked as a designer with a number of startups in Silicon Valley. He is carbon-based, and a hip-hop aficionado.</p>
+        <p>Read all of <a href="/archive">Jay Robinson’s posts</a> and <a href="http://twitter.com/jayrobinson">follow Jay Robinson on Twitter</a>.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
